@@ -2,4 +2,5 @@
 title: "Home"
 ---
 
-Welcome to **tyvan**. Explore our builds, parts, and road adventures.
+Welcome to **tyvan**, our custom sprinter van conversion showcase.
+

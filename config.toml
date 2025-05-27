@@ -1,3 +1,6 @@
-baseURL = "/"
-languageCode = "en-us"
-title = "tyvan"
+
+baseURL = '/'
+title = 'tyvan'
+languageCode = 'en-us'
+theme = 'blox-tailwind'
+

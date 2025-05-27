@@ -9,3 +9,4 @@ This project contains a simple [Hugo](https://gohugo.io/) site for showcasing sp
 2. Run `hugo` in this directory to generate the `public` folder.
 3. Serve the generated static files with any web server.
 
+
