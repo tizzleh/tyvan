@@ -1,11 +1,12 @@
+
 # tyvan
 
-This is a simple Hugo site showcasing our sprinter van conversions. It uses the [Blox Tailwind](https://themes.gohugo.io/themes/blox-tailwind/) theme and includes placeholder images.
+This project contains a simple [Hugo](https://gohugo.io/) site for showcasing sprinter van conversions.
 
-## Building the site
+## Building
 
-```
-hugo server
-```
+1. Install the `hugo` binary.
+2. Run `hugo` in this directory to generate the `public` folder.
+3. Serve the generated static files with any web server.
 
-This will start a local development server at `http://localhost:1313`.
+

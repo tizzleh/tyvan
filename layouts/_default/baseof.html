@@ -2,14 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Site.Title }} - {{ block "title" . }}{{ end }}</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Site.Title }}{{ with .Title }} - {{ . }}{{ end }}</title>
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
-<body class="min-h-screen flex flex-col">
-  {{ block "main" . }}{{ end }}
-  <footer class="mt-auto text-center py-4 bg-gray-100">
-    &copy; {{ now.Format "2006" }} {{ .Site.Title }}
+<body>
+  <header>
+    <h1>{{ .Site.Title }}</h1>
+    <nav>
+      <ul>
+        <li><a href="#build">Build</a></li>
+        <li><a href="#parts">Parts</a></li>
+        <li><a href="#adventures">Adventures</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <p>&copy; {{ now.Year }} {{ .Site.Title }}</p>
+
   </footer>
 </body>
 </html>
