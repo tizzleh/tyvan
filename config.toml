@@ -1,0 +1,4 @@
+baseURL = '/'
+title = 'tyvan'
+languageCode = 'en-us'
+theme = 'blox-tailwind'

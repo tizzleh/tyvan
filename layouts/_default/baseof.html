@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Site.Title }} - {{ block "title" . }}{{ end }}</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col">
+  {{ block "main" . }}{{ end }}
+  <footer class="mt-auto text-center py-4 bg-gray-100">
+    &copy; {{ now.Format "2006" }} {{ .Site.Title }}
+  </footer>
+</body>
+</html>

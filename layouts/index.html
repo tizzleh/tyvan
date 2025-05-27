@@ -1,0 +1,33 @@
+{{ define "title" }}Home{{ end }}
+{{ define "main" }}
+<header class="bg-gray-800 text-white p-4">
+  <h1 class="text-xl font-bold">{{ .Site.Title }}</h1>
+  <nav class="mt-2">
+    <ul class="flex space-x-4">
+      <li><a href="#build" class="hover:underline">Build</a></li>
+      <li><a href="#parts" class="hover:underline">Parts</a></li>
+      <li><a href="#adventures" class="hover:underline">Adventures</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="flex-grow">
+  <section id="hero" class="p-4">
+    <img src="/images/hero.svg" alt="tyvan hero image" class="w-full h-auto" />
+  </section>
+  <section id="build" class="p-4">
+    <h2 class="text-lg font-semibold mb-2">Building</h2>
+    <img src="/images/building.svg" alt="Building process" class="w-full h-auto mb-2" />
+    <p>Details about how we convert sprinter vans into homes on wheels.</p>
+  </section>
+  <section id="parts" class="p-4">
+    <h2 class="text-lg font-semibold mb-2">Parts</h2>
+    <img src="/images/parts.svg" alt="Van parts" class="w-full h-auto mb-2" />
+    <p>A look at the components and materials that go into our builds.</p>
+  </section>
+  <section id="adventures" class="p-4">
+    <h2 class="text-lg font-semibold mb-2">Adventures</h2>
+    <img src="/images/adventures.svg" alt="Adventures on the road" class="w-full h-auto mb-2" />
+    <p>Stories from the road and the experiences our vans make possible.</p>
+  </section>
+</main>
+{{ end }}
